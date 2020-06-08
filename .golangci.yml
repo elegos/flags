@@ -1,0 +1,42 @@
+linters:
+  disable-all: true
+  enable:
+    - deadcode
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - structcheck
+    - typecheck
+    - unused
+    - varcheck
+
+    - gocritic
+    - goconst
+    - godox
+    - goimports
+    - golint
+    - gomnd
+    - gomodguard
+    - gosec
+    - lll
+    - maligned
+    - prealloc
+    - unconvert
+    - unparam
+    - whitespace
+    - wsl
+
+linter-settings:
+  goconst:
+    min-len: 2
+    min-occurrences: 2
+  whitespace:
+    auto-fix: false
+
+issues:
+  exclude-rules:
+    - path: _test\.go$
+      linters:
+        - goconst
