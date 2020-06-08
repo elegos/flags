@@ -4,7 +4,7 @@ package flags
 type Value interface {
 	String() string             // String representation of the value
 	DefaultValueString() string // String representation of the default value
-	Set(string) error           // Used to set from the application's arguments. Ignored if RequiresValue() == true
+	Set(string) error           // Used to set from the application's arguments. If RequiresValue() == true, ("true" or "") or "false" are expected
 	IsBoolValue() bool          // If it returns true and no parameter is specified, Set will be called with "true"
 }
 

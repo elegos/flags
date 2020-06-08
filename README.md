@@ -98,6 +98,28 @@ cmd1opt1Value := flags.Float64Value(cmd1opt1)
 // continue with application's workflow
 ```
 
+### Help output example (from [examples/main.go](examples/main.go))
+```
+AppName version 0.0.1
+
+This is a description long enough to let it go on a new line: this tests the
+capability of managing columns automatically.
+
+Available options.
+
+--debug                         -d              Enable debug session (default value: "false")
+--very-very-long-option                         (default value: "false")
+                                -z              Z factor (default value: "false")
+--help                          -h              Show the application's help (default value: "false")
+
+Available commands.
+Use --help {command} {subcommand} for details.
+
+- build         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- test          Do test stuff
+```
+
 ## Option types (out of the box)
 
 This is the series of option types and option builders you can use out of the box (see [option_values.go](option_values.go)):
