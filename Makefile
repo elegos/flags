@@ -14,7 +14,7 @@ ${BUILD_DIR}/bin/golangci-lint: ${BUILD_DIR}
 	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "${BUILD_DIR}/bin" v1.27.0
 
 deps:
-  go mod download
+	go mod download
 
 lint: ${BUILD_DIR}/bin/golangci-lint
 	${BUILD_DIR}/bin/golangci-lint run
