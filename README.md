@@ -1,6 +1,7 @@
 # flags
 
 [![Build Status](https://travis-ci.org/elegos/flags.svg?branch=master)](https://travis-ci.org/elegos/flags)
+[![codecov](https://codecov.io/gh/elegos/flags/branch/master/graph/badge.svg)](https://codecov.io/gh/elegos/flags)
 
 Flags is partially an alternative, partially an extension to the golang's standard `flags` package.
 
